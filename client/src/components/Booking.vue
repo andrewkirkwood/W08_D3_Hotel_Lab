@@ -4,7 +4,10 @@
     <p> {{ booking.firstName }}</p>
     <p> {{ booking.surname }}</p>
     <p> {{ booking.email }}</p>
-    <p v-if="booking.checkedIn">Yes</p>
+    <h3>Booking Status:</h3>
+    <p v-if="booking.checkedIn === 'true'">Booked In</p>
+    <p v-if="booking.checkedIn === 'false'">Not Booked in</p>
+
     <!-- <p v-else="!booking.checkedIn">No</p> -->
 
     <button type="button" v-on:click="handleDelete(booking._id)">Delete</button>
