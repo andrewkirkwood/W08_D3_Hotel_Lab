@@ -1,31 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <!-- <bookings-form /> -->
+    <bookings-grid />
   </div>
 </template>
 
 <script>
-import BookingService from '../services/BookingService'
+import BookingsForm from './components/BookingsForm'
+import BookingsGrid from './components/BookingsGrid'
+
 
 export default {
   name: 'app',
   components: {
-
-  },
-  mounted() {
-    BookingService.getBookings()
+    // 'bookings-form': BookingsForm,
+    'bookings-grid': BookingsGrid
   }
+
 
 }
 </script>
 
 <style>
-#app {
+/* #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
+} */
 </style>
