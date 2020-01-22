@@ -22,6 +22,11 @@ export default {
   mounted() {
     this.fetchData()
     eventBus.$on('booking-added', booking => this.bookings.push(booking));
+
+    eventBus.$on('booking-deleted', id => {
+        const indexOfDeleted = this.bookings.indexOf(booking => booking._id === id)
+        this.bookings.splice(indexOfDeleted, 1)
+    } )
   },
   methods: {
     fetchData(){
