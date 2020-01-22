@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!-- <bookings-form /> -->
+    <bookings-form />
     <bookings-grid />
   </div>
 </template>
@@ -13,7 +13,7 @@ import BookingsGrid from './components/BookingsGrid'
 export default {
   name: 'app',
   components: {
-    // 'bookings-form': BookingsForm,
+    'bookings-form': BookingsForm,
     'bookings-grid': BookingsGrid
   }
 

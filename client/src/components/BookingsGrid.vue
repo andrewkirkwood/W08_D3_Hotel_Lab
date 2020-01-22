@@ -1,12 +1,13 @@
 <template lang="html">
   <div id="bookingsGrid">
-    <li>hihdd</li>
+    <booking v-for="booking in bookings" :booking="booking"/>
   </div>
 </template>
 
 <script>
 import BookingService from '../services/BookingService'
 import {eventBus} from '../main'
+import Booking from './Booking'
 
 export default {
   name: "bookings-grid",
@@ -14,6 +15,9 @@ export default {
     return {
       bookings: []
     }
+  },
+  components: {
+    'booking': Booking
   },
   mounted() {
     this.fetchData()
