@@ -1,5 +1,7 @@
 <template lang="html">
-
+  <div id="bookingsGrid">
+    <li>hihdd</li>
+  </div>
 </template>
 
 <script>
