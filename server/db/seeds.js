@@ -1,7 +1,7 @@
-use hotel_bookings;
+use hotel;
 db.dropDatabase();
 
-db.hotel_bookings.insertMany([
+db.bookings.insertMany([
   {
     firstName: "carlos",
     surname: "montoya",

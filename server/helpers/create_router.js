@@ -13,7 +13,7 @@ const router = express.Router()
     .catch((err) => {
       console.error(err)
       res.status(500)
-      res.json( {status: 500, error: err})
+      res.json({ status: 500, error: err })
     })
   })
 
